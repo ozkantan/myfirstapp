@@ -59,7 +59,7 @@ def tasktodo(request, id):
             # print(tarihtask)
             print(simdi)
             if tarihtask == simdi:
-                send_mail('Hatırlatma Maili Önemli', todo.title, 'ozkantan@e-magaza.shop', [todo.email])
+                send_mail('Hatırlatma Maili Önemli', todo.title, 'mail adress', [todo.email])
                 sleep(1)
                 return redirect("/")
                 
